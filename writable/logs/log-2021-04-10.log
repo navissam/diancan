@@ -1,0 +1,422 @@
+ERROR - 2021-04-10 08:09:46 --> Error connecting to the database: 由于目标计算机积极拒绝，无法连接。
+
+CRITICAL - 2021-04-10 08:09:46 --> Unable to connect to the database.
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#4 E:\xampp\htdocs\diancan\app\Controllers\Auth.php(167): CodeIgniter\BaseModel->first()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Auth->login()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-04-10 09:30:23 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:30:23 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 09:30:24 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:30:24 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 09:30:24 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:30:24 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 09:30:25 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:30:25 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', '0', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 09:30:36 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:30:36 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 09:30:37 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:30:37 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 09:30:41 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:30:41 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 09:30:48 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:30:48 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 09:31:01 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:31:01 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 09:33:26 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:33:26 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 09:33:27 --> mysqli_sql_exception: Invalid use of group function in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 09:33:27 --> Invalid use of group function
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orders`...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(324): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-03-01', '2021-03-31', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 10:25:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, (sum(orderdetail.price * orderdetail.qty) + orders.deliveryCost) as amoun...' at line 2 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `cusID`,...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cusID`,...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cusID`,...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `cusID`,...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(331): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 10:25:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, (sum(orderdetail.price * orderdetail.qty) + orders.deliveryCost) as amoun...' at line 2
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `cusID`,...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cusID`,...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cusID`,...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `cusID`,...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(331): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 10:25:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, (sum(orderdetail.price * orderdetail.qty) + orders.deliveryCost) as amoun...' at line 2 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `cusID`,...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cusID`,...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cusID`,...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `cusID`,...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(331): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 10:25:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, (sum(orderdetail.price * orderdetail.qty) + orders.deliveryCost) as amoun...' at line 2
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `cusID`,...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cusID`,...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cusID`,...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `cusID`,...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(331): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 10:25:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, (sum(orderdetail.price * orderdetail.qty) + orders.deliveryCost) as amoun...' at line 2 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `cusID`,...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cusID`,...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cusID`,...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `cusID`,...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(331): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 10:25:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, (sum(orderdetail.price * orderdetail.qty) + orders.deliveryCost) as amoun...' at line 2
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `cusID`,...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cusID`,...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cusID`,...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `cusID`,...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(331): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 10:26:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY `orders`.`cusID`' at line 10 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `cusID`,...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cusID`,...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cusID`,...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `cusID`,...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(331): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 10:26:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY `orders`.`cusID`' at line 10
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `cusID`,...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cusID`,...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cusID`,...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `cusID`,...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(331): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-10 10:27:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY `cusID`' at line 10 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `cusID`,...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cusID`,...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cusID`,...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `cusID`,...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(331): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 10:27:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY `cusID`' at line 10
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `cusID`,...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cusID`,...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cusID`,...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `cusID`,...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(331): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(63): App\Models\Orders_model->getHistoryByCus('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->history_by_cus_query('2021-04-01', '2021-04-10', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-10 13:55:00 --> Invalid file: {0}
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/orders/v_...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/v_...', Array, true)
+#2 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(43): view('admin/orders/v_...', Array)
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->food()
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

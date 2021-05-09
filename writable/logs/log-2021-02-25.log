@@ -1,0 +1,94 @@
+CRITICAL - 2021-02-25 10:55:15 --> Class 'App\Filters\AuthCas' not found
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/payment', 'before')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-02-25 10:55:28 --> authcas filter must have a matching alias defined.
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(354): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authcas')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\Filters\Filters->enableFilter('authcas', 'before')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-02-25 10:56:00 --> Class 'App\Filters\AuthCas' not found
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/payment', 'before')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-02-25 14:24:14 --> Invalid file: admin/orders/v_payment_check.php
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/orders/v_...')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/v_...', Array, true)
+#2 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Payment.php(37): view('admin/orders/v_...', Array)
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->index()
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-25 14:41:22 --> Undefined index: ordID
+#0 C:\xampp\htdocs\dianchan\app\Views\admin\orders\v_payment_result.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/v_...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Payment.php(39): view('admin/orders/v_...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->result()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-02-25 14:44:32 --> array_push() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() ex...', 'C:\\xampp\\htdocs...', 34, Array)
+#1 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Payment.php(34): array_push(NULL, Array)
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->result()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-25 16:10:12 --> Undefined variable: deliverySta
+#0 C:\xampp\htdocs\dianchan\app\Views\admin\orders\v_payment_result.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 131, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/v_...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Payment.php(41): view('admin/orders/v_...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->result()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-02-25 17:04:13 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getMethod
+#0 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Payment.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->process()
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-25 17:09:20 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dianchan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Home.php(25): view('customer/v_home...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-02-25 17:11:37 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dianchan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Home.php(25): view('customer/v_home...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}

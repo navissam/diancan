@@ -1,0 +1,40 @@
+CRITICAL - 2021-04-08 09:18:18 --> Invalid file: {0}
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/food/v_fo...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/food/v_fo...', Array, true)
+#2 E:\xampp\htdocs\diancan\app\Controllers\Admin\Food.php(68): view('admin/food/v_fo...', Array)
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Food->edit_s('AAAA')
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Food))
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-08 10:47:37 --> Too few arguments to function App\Controllers\Admin\Food::switch(), 0 passed in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php on line 876 and exactly 1 expected
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Food->switch()
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Food))
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-08 10:48:47 --> Too few arguments to function App\Controllers\Admin\Food::switch(), 0 passed in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php on line 876 and exactly 1 expected
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Food->switch()
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Food))
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-08 11:16:17 --> Invalid file: {0}
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/food/v_fo...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/food/v_fo...', Array, true)
+#2 E:\xampp\htdocs\diancan\app\Controllers\Admin\Food.php(570): view('admin/food/v_fo...', Array)
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Food->export()
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Food))
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-08 17:00:07 --> syntax error, unexpected ')', expecting variable (T_VARIABLE)
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Orde...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Orde...')
+#3 E:\xampp\htdocs\diancan\app\Controllers\Admin\Report.php(15): spl_autoload_call('App\\Models\\Orde...')
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(851): App\Controllers\Admin\Report->__construct()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(402): CodeIgniter\CodeIgniter->createController()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,51 @@
+CRITICAL - 2021-03-10 10:03:46 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-03-10 11:17:14 --> Undefined index: price
+#0 C:\xampp\htdocs\dianchan\app\Views\admin\report\r_history_by_orders.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 57, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('/admin/report/r...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Report.php(39): view('/admin/report/r...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Report->orders('orders', 'all', '2021-03-09')
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Report))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-10 11:20:07 --> Undefined variable: row
+#0 C:\xampp\htdocs\dianchan\app\Views\admin\report\r_history_by_orders.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('/admin/report/r...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Report.php(39): view('/admin/report/r...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Report->orders('orders', 'BQ', '2021-03-09')
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Report))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-10 11:20:27 --> Undefined variable: row
+#0 C:\xampp\htdocs\dianchan\app\Views\admin\report\r_history_by_orders.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('/admin/report/r...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Report.php(39): view('/admin/report/r...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Report->orders('orders', 'BQ', '2021-03-09')
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Report))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-10 14:14:42 --> Undefined index: name
+#0 C:\xampp\htdocs\dianchan\app\Views\admin\report\r_history_by_food.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('/admin/report/r...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Report.php(44): view('/admin/report/r...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Report->orders('food', 'all', '2021-03-09')
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Report))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}

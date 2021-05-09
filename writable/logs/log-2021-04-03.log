@@ -1,0 +1,116 @@
+ERROR - 2021-04-03 08:11:08 --> Error connecting to the database: 由于目标计算机积极拒绝，无法连接。
+
+CRITICAL - 2021-04-03 08:11:08 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\diancan\app\Controllers\Auth.php(167): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Auth->login()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-04-03 08:12:18 --> Error connecting to the database: 由于目标计算机积极拒绝，无法连接。
+
+CRITICAL - 2021-04-03 08:12:18 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\diancan\app\Controllers\Auth.php(167): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Auth->login()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-04-03 10:16:52 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2021-04-03 10:16:52 --> Unable to connect to the database.
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#4 E:\xampp\htdocs\diancan\app\Controllers\Auth.php(167): CodeIgniter\BaseModel->first()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Auth->login()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-04-03 10:57:15 --> Error connecting to the database: Unknown database 'diancan'
+CRITICAL - 2021-04-03 10:57:15 --> Unable to connect to the database.
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#4 E:\xampp\htdocs\diancan\app\Controllers\Auth.php(167): CodeIgniter\BaseModel->first()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Auth->login()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-03 11:08:07 --> Undefined variable: announcement
+#0 E:\xampp\htdocs\diancan\app\Views\customer\v_home.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 53, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Home->index()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-03 11:08:11 --> Undefined variable: announcement
+#0 E:\xampp\htdocs\diancan\app\Views\customer\v_home.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 53, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Home->index()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-03 11:08:37 --> Undefined variable: announcement
+#0 E:\xampp\htdocs\diancan\app\Views\customer\v_home.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 53, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Home->index()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-03 14:08:53 --> Undefined variable: deliveryCost
+#0 E:\xampp\htdocs\diancan\app\Views\admin\variables\v_edit_announcement.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 51, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/variables...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Admin\Variable.php(98): view('admin/variables...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Variable->announcement()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Variable))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-03 14:13:14 --> Undefined variable: deliveryCost
+#0 E:\xampp\htdocs\diancan\app\Views\admin\variables\v_edit_announcement.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 51, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/variables...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Admin\Variable.php(98): view('admin/variables...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Variable->announcement()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Variable))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-03 15:39:39 --> Undefined variable: announcemen
+#0 E:\xampp\htdocs\diancan\app\Views\admin\variables\v_edit_announcement.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 48, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/variables...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Admin\Variable.php(98): view('admin/variables...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Variable->announcement()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Variable))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

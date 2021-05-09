@@ -1,0 +1,24 @@
+ERROR - 2021-04-23 09:51:22 --> mysqli_sql_exception: FUNCTION diancan.ROUNDUP does not exist in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `or...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2107): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(32): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#5 E:\xampp\htdocs\diancan\app\Controllers\Menu.php(160): App\Models\Orders_model->insertDetail(Array)
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Menu->ordering()
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-23 09:55:06 --> Undefined variable: row
+#0 E:\xampp\htdocs\diancan\app\Views\admin\orders\v_payment_result.php(176): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 176, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/v_...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(68): view('admin/orders/v_...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Payment->result('R3Z-210423')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

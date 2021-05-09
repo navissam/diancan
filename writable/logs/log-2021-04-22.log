@@ -1,0 +1,333 @@
+CRITICAL - 2021-04-22 08:42:36 --> Too few arguments to function App\Controllers\Admin\Orders::pivot(), 0 passed in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php on line 876 and exactly 6 expected
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot()
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-04-22 09:18:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-22 09:18:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-22 09:18:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-22 09:18:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-22 09:18:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-22 09:18:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-22 09:18:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-22 09:18:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-22 09:18:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-22 09:18:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-22 09:18:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-22 09:18:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-22 09:18:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-22 09:18:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-04-22 09:18:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8 in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-22 09:18:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0' at line 8
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `orderde...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orderde...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orderde...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `orderde...', Array, false)
+#4 E:\xampp\htdocs\diancan\app\Models\Orders_model.php(463): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\app\Controllers\Admin\Orders.php(73): App\Models\Orders_model->getPivotColumns('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Orders->pivot_col('2021-04-20', '2021-04-20', 'all', 'all', 'all', 'all')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Orders))
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-22 09:46:33 --> Undefined variable: header
+#0 E:\xampp\htdocs\diancan\app\Views\customer\v_orders_list.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 68, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_orde...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Orders.php(31): view('customer/v_orde...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Orders->index()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-04-22 10:46:40 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=' in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, '486-27\xD7t22')
+#6 E:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(54): CodeIgniter\BaseModel->find('486-27\xD7t22')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Payment->result('486-27\xD7t22')
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-04-22 10:46:40 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, '486-27\xD7t22')
+#6 E:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(54): CodeIgniter\BaseModel->find('486-27\xD7t22')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Payment->result('486-27\xD7t22')
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-04-22 10:49:24 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=' in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, '\xD1\xAB\x1A\xB1\xAB')
+#6 E:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(55): CodeIgniter\BaseModel->find('\xD1\xAB\x1A\xB1\xAB')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Payment->result('\xD1\xAB\x1A\xB1\xAB')
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-04-22 10:49:24 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, '\xD1\xAB\x1A\xB1\xAB')
+#6 E:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(55): CodeIgniter\BaseModel->find('\xD1\xAB\x1A\xB1\xAB')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Payment->result('\xD1\xAB\x1A\xB1\xAB')
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-04-22 10:50:42 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=' in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, '486-210<\x8C')
+#6 E:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(55): CodeIgniter\BaseModel->find('486-210<\x8C')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Payment->result('486-210<\x8C')
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-04-22 10:50:42 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, '486-210<\x8C')
+#6 E:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(55): CodeIgniter\BaseModel->find('486-210<\x8C')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Payment->result('486-210<\x8C')
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-04-22 10:50:50 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=' in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, '486-210<\x8C')
+#6 E:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(55): CodeIgniter\BaseModel->find('486-210<\x8C')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Payment->result('486-210<\x8C')
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-04-22 10:51:01 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=' in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, '486-213&\xAC')
+#6 E:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(55): CodeIgniter\BaseModel->find('486-213&\xAC')
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Payment->result('486-213&\xAC')
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-04-22 14:03:02 --> Call to undefined function App\Controllers\now()
+#0 E:\xampp\htdocs\diancan\app\Controllers\Menu.php(110): App\Controllers\Menu->isDouble('2665', Array, 60)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Menu->ordering()
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,77 @@
+ERROR - 2021-04-05 09:19:58 --> mysqli_sql_exception: Column 'userID' cannot be null in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `ad...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\diancan\app\Controllers\Admin\Variable.php(111): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Variable->updateannounce()
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Variable))
+#10 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-05 09:19:58 --> mysqli_sql_exception: Column 'userID' cannot be null in E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `ad...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\diancan\app\Controllers\Admin\Variable.php(124): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Variable->updateannounce()
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Variable))
+#10 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-05 09:19:58 --> Column 'userID' cannot be null
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `ad...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\diancan\app\Controllers\Admin\Variable.php(124): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Variable->updateannounce()
+#9 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Variable))
+#10 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-05 10:01:09 --> Undefined offset: 1
+#0 E:\xampp\htdocs\diancan\app\Views\templates\dashboard.php(176): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'E:\\xampp\\htdocs...', 176, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/dashb...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Admin\Dashboard.php(17): view('templates/dashb...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Dashboard->index()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-05 10:10:13 --> Undefined offset: 1
+#0 E:\xampp\htdocs\diancan\app\Views\templates\dashboard.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'E:\\xampp\\htdocs...', 177, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/dashb...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Admin\Dashboard.php(17): view('templates/dashb...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Dashboard->index()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-05 10:11:45 --> Undefined offset: 1
+#0 E:\xampp\htdocs\diancan\app\Views\templates\dashboard.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'E:\\xampp\\htdocs...', 177, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/dashb...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Admin\Dashboard.php(17): view('templates/dashb...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Admin\Dashboard->index()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

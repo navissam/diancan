@@ -1,0 +1,41 @@
+CRITICAL - 2021-03-05 13:58:57 --> Undefined property: App\Controllers\Auth::$user_model
+#0 C:\xampp\htdocs\dianchan\app\Controllers\Auth.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 130, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->login()
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-05 14:42:23 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dianchan\app\Views\customer\v_orderResult.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_orde...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Menu.php(94): view('customer/v_orde...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Menu->orderResult('80910283-210305...')
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-05 14:44:09 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 89, Array)
+#1 C:\xampp\htdocs\dianchan\app\Controllers\Menu.php(89): count(NULL)
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Menu->orderResult('80910283-210305...')
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-05 14:46:59 --> Undefined variable: deliveryCost
+#0 C:\xampp\htdocs\dianchan\app\Views\admin\orders\v_payment_result.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 111, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/v_...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Payment.php(39): view('admin/orders/v_...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->result()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}

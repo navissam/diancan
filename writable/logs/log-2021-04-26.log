@@ -1,0 +1,64 @@
+CRITICAL - 2021-04-26 11:00:35 --> Call to undefined function App\Controllers\set_cookie()
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Auth->login()
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-26 14:01:45 --> Undefined property: App\Filters\CusFilter::$cuslog
+#0 E:\xampp\htdocs\diancan\app\Filters\CusFilter.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\xampp\\htdocs...', 30, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\CusFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('/', 'before')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-26 14:26:43 --> Call to undefined function App\Controllers\get_cookie()
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Auth->login()
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-26 14:54:55 --> Call to undefined function App\Filters\get_cookie()
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\CusFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-26 14:55:36 --> Undefined index: cusid
+#0 E:\xampp\htdocs\diancan\app\Filters\CusFilter.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 16, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Filters\Filters.php(181): App\Filters\CusFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('/', 'before')
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-26 15:03:39 --> Undefined index: cusid
+#0 E:\xampp\htdocs\diancan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\xampp\\htdocs...', 10, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Home->index()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-26 15:03:53 --> Array to string conversion
+#0 E:\xampp\htdocs\diancan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'E:\\xampp\\htdocs...', 10, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Home->index()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-26 16:57:50 --> syntax error, unexpected 'if' (T_IF)
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs...')
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(837): class_exists('\\App\\Controller...', true)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->startController()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,28 @@
+ERROR - 2021-02-22 16:47:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2) VALUES (('80910283-210222164740','U004','炒饭',25000,1), ('8091028...' at line 1 in C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `or...')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\dianchan\app\Models\Orders_model.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\dianchan\app\Controllers\Menu.php(62): App\Models\Orders_model->insertDetail(Array)
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Menu->ordering()
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#8 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-02-22 17:00:13 --> mysqli_sql_exception: Unknown column 'foodIDa' in 'field list' in C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `or...')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2107): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\dianchan\app\Models\Orders_model.php(32): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#5 C:\xampp\htdocs\dianchan\app\Controllers\Menu.php(62): App\Models\Orders_model->insertDetail(Array)
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Menu->ordering()
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#8 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}

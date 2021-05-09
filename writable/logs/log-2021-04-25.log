@@ -1,0 +1,3 @@
+CRITICAL - 2021-04-25 14:21:44 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

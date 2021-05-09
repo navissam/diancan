@@ -1,0 +1,55 @@
+CRITICAL - 2021-03-28 21:54:27 --> Undefined offset: 0
+#0 C:\xampp\htdocs\diancan\app\Views\templates\dashboard.php(176): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 176, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/dashb...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Dashboard.php(17): view('templates/dashb...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Dashboard->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-28 21:55:44 --> Undefined offset: 0
+#0 C:\xampp\htdocs\diancan\app\Views\templates\dashboard.php(176): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 176, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/dashb...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Dashboard.php(17): view('templates/dashb...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Dashboard->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-28 21:58:17 --> Undefined offset: 0
+#0 C:\xampp\htdocs\diancan\app\Views\templates\dashboard.php(176): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 176, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/dashb...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Dashboard.php(17): view('templates/dashb...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Dashboard->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-28 21:58:26 --> Undefined offset: 0
+#0 C:\xampp\htdocs\diancan\app\Views\templates\dashboard.php(176): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 176, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/dashb...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Dashboard.php(17): view('templates/dashb...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Dashboard->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-28 21:59:35 --> Undefined offset: 0
+#0 C:\xampp\htdocs\diancan\app\Views\templates\dashboard.php(176): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 176, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('templates/dashb...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Dashboard.php(17): view('templates/dashb...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Dashboard->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

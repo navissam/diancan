@@ -1,0 +1,66 @@
+CRITICAL - 2021-03-26 05:38:25 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\diancan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-26 05:38:25 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\diancan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-26 05:38:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\diancan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-26 10:07:07 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\diancan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-26 18:22:05 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\diancan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-26 23:16:21 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\diancan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

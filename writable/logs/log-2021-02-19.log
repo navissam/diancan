@@ -1,0 +1,122 @@
+CRITICAL - 2021-02-19 13:54:03 --> AuthAdmin filter must have a matching alias defined.
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(527): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthAdmin')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(168): CodeIgniter\Filters\Filters->initialize('login')
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('login', 'before')
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-19 13:54:50 --> AuthAdmin filter must have a matching alias defined.
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(527): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthAdmin')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(168): CodeIgniter\Filters\Filters->initialize('login')
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('login', 'before')
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-19 13:55:01 --> AuthAdmin filter must have a matching alias defined.
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(527): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthAdmin')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(168): CodeIgniter\Filters\Filters->initialize('login')
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('login', 'before')
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-19 13:55:04 --> AuthAdmin filter must have a matching alias defined.
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(527): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthAdmin')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(168): CodeIgniter\Filters\Filters->initialize('/')
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-19 14:15:11 --> syntax error, unexpected 'if' (T_IF)
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-02-19 14:15:47 --> Cannot declare class App\Filters\AuthAdmin, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-19 16:48:50 --> Cannot declare class App\Controllers\Home, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-19 16:52:34 --> Cannot declare class App\Controllers\Dashboard, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-19 16:54:02 --> Cannot declare class App\Controllers\Dashboard, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-19 16:56:20 --> Cannot declare class App\Controllers\Dashboard, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-19 17:07:04 --> Class 'App\Controllers\BaseController' not found
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(294): include_once()
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-02-19 17:08:01 --> Class 'App\Controllers\BaseController' not found
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(294): include_once()
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-02-19 17:08:03 --> Class 'App\Controllers\BaseController' not found
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(294): include_once()
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-02-19 17:58:24 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=' in C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, '\x8Aw^\xC7xm\x9A')
+#6 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Food.php(33): CodeIgniter\BaseModel->find('\x8Aw^\xC7xm\x9A')
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Food->edit('\x8Aw^\xC7xm\x9A')
+#8 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Food))
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-02-19 17:58:24 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, '\x8Aw^\xC7xm\x9A')
+#6 C:\xampp\htdocs\dianchan\app\Controllers\Admin\Food.php(33): CodeIgniter\BaseModel->find('\x8Aw^\xC7xm\x9A')
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Food->edit('\x8Aw^\xC7xm\x9A')
+#8 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Food))
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}

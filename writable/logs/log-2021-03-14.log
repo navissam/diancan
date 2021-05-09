@@ -1,0 +1,61 @@
+CRITICAL - 2021-03-14 14:33:12 --> Too few arguments to function App\Controllers\Admin\Payment::print(), 0 passed in C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php on line 936 and exactly 1 expected
+#0 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->print()
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-03-14 14:36:29 --> Illegal string offset 'foodName'
+#0 C:\xampp\htdocs\diancan\app\Views\admin\orders\r_order_print.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/r_...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(76): view('admin/orders/r_...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->print('80910283-210313...')
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-14 14:38:08 --> Illegal string offset 'foodName'
+#0 C:\xampp\htdocs\diancan\app\Views\admin\orders\r_order_print.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/r_...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(76): view('admin/orders/r_...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->print('80910283-210313...')
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-14 14:40:12 --> Undefined variable: deliveryCost
+#0 C:\xampp\htdocs\diancan\app\Views\admin\orders\r_order_print.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 76, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/r_...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(76): view('admin/orders/r_...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->print('80910283-210313...')
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-14 14:43:06 --> Undefined variable: deliveryCost
+#0 C:\xampp\htdocs\diancan\app\Views\admin\orders\r_order_print.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/r_...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(76): view('admin/orders/r_...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->print('80910283-210313...')
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-14 17:07:53 --> Undefined variable: deliveryCost
+#0 C:\xampp\htdocs\diancan\app\Views\admin\orders\v_payment_result.php(113): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 113, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/v_...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(40): view('admin/orders/v_...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->result()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

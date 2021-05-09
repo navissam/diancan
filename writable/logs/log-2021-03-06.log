@@ -1,0 +1,41 @@
+CRITICAL - 2021-03-06 10:12:43 --> LoginFilter filter must have a matching alias defined.
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(354): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('LoginFilter')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\Filters\Filters->enableFilter('LoginFilter', 'before')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-03-06 10:32:29 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-03-06 10:34:29 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dianchan\app\Views\customer\v_home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_home...', Array, true)
+#4 C:\xampp\htdocs\dianchan\app\Controllers\Home.php(29): view('customer/v_home...', Array)
+#5 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-06 10:41:33 --> CusFilter filter must have a matching alias defined.
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Filters\Filters.php(354): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('CusFilter')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\Filters\Filters->enableFilter('CusFilter', 'before')
+#2 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-03-06 15:09:16 --> Invalid file: template/404.php
+#0 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/404.ph...')
+#1 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('template/404', Array, true)
+#2 C:\xampp\htdocs\dianchan\app\Config\Routes.php(24): view('template/404')
+#3 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(959): CodeIgniter\Router\RouteCollection->Config\{closure}('Controller or i...')
+#4 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 C:\xampp\htdocs\dianchan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\dianchan\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}

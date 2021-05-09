@@ -1,0 +1,102 @@
+CRITICAL - 2021-03-15 10:05:09 --> Undefined variable: row
+#0 C:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->result()
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-15 10:09:54 --> Undefined variable: ordID
+#0 C:\xampp\htdocs\diancan\app\Views\customer\v_orders_list.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 194, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_orde...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Orders.php(30): view('customer/v_orde...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Orders->index()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-15 11:19:20 --> Illegal string offset 'ordID'
+#0 C:\xampp\htdocs\diancan\app\Views\admin\orders\v_payment_result.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/v_...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(35): view('admin/orders/v_...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->result()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-15 11:28:51 --> Undefined variable: orders
+#0 C:\xampp\htdocs\diancan\app\Views\admin\orders\v_payment_result.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/v_...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(47): view('admin/orders/v_...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->result()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-15 11:31:57 --> Undefined variable: orders
+#0 C:\xampp\htdocs\diancan\app\Views\admin\orders\v_payment_result.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/orders/v_...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Payment.php(47): view('admin/orders/v_...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Payment->result()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Payment))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-15 15:23:33 --> Undefined variable: beginTime
+#0 C:\xampp\htdocs\diancan\app\Views\admin\variables\v_change_timelimit.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/variables...', Array, true)
+#4 C:\xampp\htdocs\diancan\app\Controllers\Admin\Variable.php(22): view('admin/variables...', Array)
+#5 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Variable->changeTimeLimit()
+#6 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Variable))
+#7 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-03-15 15:48:31 --> Undefined offset: 0
+#0 C:\xampp\htdocs\diancan\app\Models\Variables_model.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\diancan\app\Controllers\Home.php(26): App\Models\Variables_model->getValue('orderTimeLimit')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-03-15 16:06:58 --> Undefined offset: 0
+#0 C:\xampp\htdocs\diancan\app\Models\Variables_model.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\diancan\app\Controllers\Home.php(26): App\Models\Variables_model->getValue('orderTimeLimit')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-03-15 16:08:26 --> Undefined offset: 0
+#0 C:\xampp\htdocs\diancan\app\Models\Variables_model.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\diancan\app\Controllers\Home.php(26): App\Models\Variables_model->getValue('orderTimeLimit')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-03-15 16:28:31 --> Undefined offset: 0
+#0 C:\xampp\htdocs\diancan\app\Models\Variables_model.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\diancan\app\Controllers\Menu.php(36): App\Models\Variables_model->getValue('orderTimeLimit')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Menu->index()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#4 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-03-15 16:28:38 --> Undefined offset: 0
+#0 C:\xampp\htdocs\diancan\app\Models\Variables_model.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\diancan\app\Controllers\Menu.php(36): App\Models\Variables_model->getValue('orderTimeLimit')
+#2 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Menu->index()
+#3 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#4 C:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}

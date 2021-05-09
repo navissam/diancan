@@ -1,0 +1,32 @@
+CRITICAL - 2021-04-27 14:36:53 --> Undefined variable: totalTime
+#0 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Debug\Toolbar\Views\toolbar.tpl.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 41, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Debug\Toolbar.php(456): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Debug\Toolbar.php(413): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 E:\xampp\htdocs\diancan\app\Config\Events.php(52): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Events\Events.php(166): call_user_func(Object(Closure))
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\Events\Events::trigger('pre_system')
+#7 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-27 14:43:18 --> Trying to access array offset on value of type null
+#0 E:\xampp\htdocs\diancan\app\Views\customer\v_first.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'E:\\xampp\\htdocs...', 53, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_firs...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Home.php(37): view('customer/v_firs...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Home->first()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-27 14:43:37 --> Trying to access array offset on value of type null
+#0 E:\xampp\htdocs\diancan\app\Views\customer\v_first.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'E:\\xampp\\htdocs...', 53, Array)
+#1 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(220): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('customer/v_firs...', Array, true)
+#4 E:\xampp\htdocs\diancan\app\Controllers\Home.php(37): view('customer/v_firs...', Array)
+#5 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(876): App\Controllers\Home->first()
+#6 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(411): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\xampp\htdocs\diancan\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\diancan\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
