@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,windows,codeigniter
 
 diancan-1.2.sql
-
+.env
 ### CodeIgniter ###
 */config/development
 */logs/log-*.php
