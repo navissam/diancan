@@ -3,6 +3,9 @@
 
 diancan-1.2.sql
 .env
+writable/debugbar/*
+writable/session/*
+
 
 ### CodeIgniter ###
 */config/development
