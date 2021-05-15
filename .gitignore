@@ -3,6 +3,7 @@
 
 diancan-1.2.sql
 .env
+
 ### CodeIgniter ###
 */config/development
 */logs/log-*.php

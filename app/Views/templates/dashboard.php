@@ -16,7 +16,7 @@
     <!-- Main content -->
     <section class="content">
         <div class="row">
-            <div class="col-lg-6 col-md-8 col-sm-12">
+            <div class="col-lg-7 col-md-8 col-sm-12">
                 <div class="row">
                     <?php if (in_array(session()->get('roleID'), ['super', 'admin', 'cashier'])) : ?>
                         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -25,7 +25,7 @@
                                     <span class="info-box-icon bg-success"><i class="fa fa-chart-pie"></i></span>
 
                                     <div class="info-box-content">
-                                        <span class="h4 text-success">付款 Pembayaran</span>
+                                        <span class="h6 text-success">付款<br>Pembayaran</span>
                                     </div>
                                     <!-- /.info-box-content -->
                                 </div>
@@ -40,7 +40,7 @@
                                     <span class="info-box-icon bg-info"><i class="fa fa-file-invoice"></i></span>
 
                                     <div class="info-box-content">
-                                        <span class="h4 text-info">订单明细 Rincian Pesanan</span>
+                                        <span class="h6 text-info">订单明细<br>Rincian Pesanan</span>
                                     </div>
                                     <!-- /.info-box-content -->
                                 </div>
@@ -56,7 +56,7 @@
                                     <span class="info-box-icon bg-maroon"><i class="far fa-clock"></i></span>
 
                                     <div class="info-box-content">
-                                        <span class="h6 text-maroon">点餐时间设置 Pengaturan Waktu Pesanan</span>
+                                        <span class="h6 text-maroon">点餐时间<br>Waktu Pesanan</span>
                                     </div>
                                     <!-- /.info-box-content -->
                                 </div>
@@ -69,7 +69,7 @@
                                     <span class="info-box-icon bg-purple"><i class="fas fa-hand-holding-usd"></i></span>
 
                                     <div class="info-box-content">
-                                        <span class="h6 text-purple">外送费设置 Pengaturan Biaya Pengantaran</span>
+                                        <span class="h6 text-purple">外送费设置<br>Biaya Pengantaran</span>
                                     </div>
                                     <!-- /.info-box-content -->
                                 </div>
@@ -82,7 +82,7 @@
                                     <span class="info-box-icon bg-primary"><i class="fas fa-bullhorn"></i></span>
 
                                     <div class="info-box-content">
-                                        <span class="h6 text-primary">公告设置 Pengaturan Pengumuman</span>
+                                        <span class="h6 text-primary">公告设置<br>Pengumuman</span>
                                     </div>
                                     <!-- /.info-box-content -->
                                 </div>
@@ -97,7 +97,7 @@
                                     <span class="info-box-icon bg-olive"><i class="fas fa-user-friends"></i></span>
 
                                     <div class="info-box-content">
-                                        <span class="h4 text-olive">消费者管理 Customer</span>
+                                        <span class="h6 text-olive">消费者管理<br>Customer</span>
                                     </div>
                                     <!-- /.info-box-content -->
                                 </div>
@@ -112,7 +112,7 @@
                                     <span class="info-box-icon bg-navy"><i class="fas fa-user-friends"></i></span>
 
                                     <div class="info-box-content">
-                                        <span class="h4 text-navy">账号管理 Akun Admin</span>
+                                        <span class="h6 text-navy">账号管理<br>Akun Admin</span>
                                     </div>
                                     <!-- /.info-box-content -->
                                 </div>
@@ -122,13 +122,13 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-4 col-12">
+            <div class="col-lg-5 col-md-4 col-12">
                 <div class="row">
                     <?php if (in_array(session()->get('roleID'), ['super', 'admin', 'chef'])) : ?>
                         <div class="col-12">
                             <div class="card card-primary" style="transition: all 0.15s ease 0s; height: inherit; width: inherit;">
                                 <div class="card-header">
-                                    <h3 class="card-title">今日订单 Pesanan Hari Ini</h3>
+                                    <h3 class="card-title">今日订单<br>Pesanan Hari Ini</h3>
                                     <!-- /.card-tools -->
                                 </div>
                                 <!-- /.card-header -->
