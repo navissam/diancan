@@ -173,7 +173,7 @@ class Customer extends BaseController
             foreach ($data as $d => $row) {
                 // dd($row);
                 if ($d == 0) {
-                    if ($row[0] == "姓名 Nama" && $row[1] == "工号 NIK") {
+                    if ($row[0] == "工号 NIK" && $row[1] == "姓名 Nama") {
                         continue;
                     } else {
                         session()->setFlashdata('error2', '范本不合适 Template tidak cocok');
@@ -246,7 +246,7 @@ class Customer extends BaseController
     }
     public function download()
     {
-        return $this->response->download('download/Templates1.xlsx', NULL);
+        return $this->response->download('download/Customer.xlsx', NULL);
         return redirect()->to(base_url('/admin/customer'));
     }
 

@@ -136,7 +136,6 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary batalData">取消 Batal</button>
                                     <button type="submit" class="btn btn-primary">保存 Simpan</button>
                                 </div>
                             </form>
