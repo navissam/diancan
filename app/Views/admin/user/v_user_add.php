@@ -68,12 +68,12 @@
                             <!-- /.card-body -->
                             <div class="card-footer">
                                 <div class="float-sm-right">
-                                    <button type="submit" class="btn btn-primary">
-                                        保存 Simpan
-                                    </button>
                                     <a class="btn btn-secondary" href="<?= base_url('/admin/user'); ?>">
                                         取消 Batal
                                     </a>
+                                    <button type="submit" class="btn btn-primary">
+                                        保存 Simpan
+                                    </button>
                                 </div>
                             </div>
                         </form>

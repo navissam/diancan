@@ -96,6 +96,9 @@ $routes->group('admin', function ($routes) {
 		$routes->post('result', 'Admin\Customer::result');
 		$routes->post('block', 'Admin\Customer::block');
 		$routes->post('restore', 'Admin\Customer::restore');
+		$routes->post('upload', 'Admin\Customer::upload');
+		$routes->post('download', 'Admin\Customer::download');
+		$routes->post('save', 'Admin\Customer::save');
 	});
 
 	$routes->group('user', ['filter' => 'RoleFilter:super'], function ($routes) {
