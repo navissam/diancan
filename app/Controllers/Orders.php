@@ -6,6 +6,7 @@ use App\Models\Food_model;
 use App\Models\Orders_model;
 use App\Models\Variables_model;
 use App\Models\Customer_model;
+use CodeIgniter\I18n\Time;
 
 class Orders extends BaseController
 {
@@ -33,10 +34,23 @@ class Orders extends BaseController
 
     public function cancel()
     {
+        $time = $this->varModel->getValue('endTime');
+        $myTime = new Time('now');
         if ($this->request->getMethod() == 'post') {
             $ordID = $this->request->getPost('ordID');
             try {
-                if ($this->orderModel->delete($ordID) && $this->orderModel->deleteDetails($ordID)) {
+                if ($time < $myTime->toTimeString()) {
+                    $this->cuslog->insert([
+                        'controller' => 'orders',
+                        'method' => 'cancel',
+                        'empID' => session()->get('empID'),
+                        'status' => 0,
+                        'data' => 'ordID = ' . $ordID,
+                        'response' => 'canceling overtime'
+                    ]);
+                    session()->setFlashdata('error', '撤销时间已过');
+                    return redirect()->to(base_url('/orders'));
+                } elseif ($this->orderModel->delete($ordID) && $this->orderModel->deleteDetails($ordID)) {
                     session()->setFlashdata('success', '撤销成功');
                     return redirect()->to(base_url('/orders'));
                 } else {

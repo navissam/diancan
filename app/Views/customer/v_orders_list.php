@@ -20,7 +20,7 @@
     <div class="content">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-lg-6 col-md-8 col-sm-12">
                     <?php if (!empty(session()->getFlashdata('success'))) : ?>
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
                             <?= session()->getFlashdata('success') ?>
