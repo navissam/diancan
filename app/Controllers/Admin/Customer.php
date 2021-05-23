@@ -180,8 +180,8 @@ class Customer extends BaseController
                         return redirect()->to(base_url('/admin/customer'));
                     }
                 }
-                $name = $row[0];
-                $empID = $row[1];
+                $empID = $row[0];
+                $name = $row[1];
 
                 $db = \Config\Database::connect();
 
