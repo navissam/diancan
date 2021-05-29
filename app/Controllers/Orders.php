@@ -34,23 +34,22 @@ class Orders extends BaseController
 
     public function cancel()
     {
-        $time = $this->varModel->getValue('endTime');
-        $myTime = new Time('now');
         if ($this->request->getMethod() == 'post') {
             $ordID = $this->request->getPost('ordID');
             try {
-                if ($time < $myTime->toTimeString()) {
+                $result = $this->orderModel->find($ordID);
+                if ($result['paymentSta'] == 1) {
                     $this->cuslog->insert([
                         'controller' => 'orders',
                         'method' => 'cancel',
                         'empID' => session()->get('empID'),
                         'status' => 0,
                         'data' => 'ordID = ' . $ordID,
-                        'response' => 'canceling overtime'
+                        'response' => 'Trying canceling order after payment'
                     ]);
-                    session()->setFlashdata('error', '撤销时间已过');
                     return redirect()->to(base_url('/orders'));
-                } elseif ($this->orderModel->delete($ordID) && $this->orderModel->deleteDetails($ordID)) {
+                }
+                if ($this->orderModel->delete($ordID)) {
                     session()->setFlashdata('success', '撤销成功');
                     return redirect()->to(base_url('/orders'));
                 } else {
@@ -70,6 +69,42 @@ class Orders extends BaseController
                 return redirect()->to(base_url('/orders'));
             }
         }
+        // $time = $this->varModel->getValue('endTime');
+        // $myTime = new Time('now');
+        // if ($this->request->getMethod() == 'post') {
+        //     $ordID = $this->request->getPost('ordID');
+        //     try {
+        //         if ($time < $myTime->toTimeString()) {
+        //             $this->cuslog->insert([
+        //                 'controller' => 'orders',
+        //                 'method' => 'cancel',
+        //                 'empID' => session()->get('empID'),
+        //                 'status' => 0,
+        //                 'data' => 'ordID = ' . $ordID,
+        //                 'response' => 'canceling overtime'
+        //             ]);
+        //             session()->setFlashdata('error', '撤销时间已过');
+        //             return redirect()->to(base_url('/orders'));
+        //         } elseif ($this->orderModel->delete($ordID) && $this->orderModel->deleteDetails($ordID)) {
+        //             session()->setFlashdata('success', '撤销成功');
+        //             return redirect()->to(base_url('/orders'));
+        //         } else {
+        //             session()->setFlashdata('error', '撤销失败');
+        //             return redirect()->to(base_url('/orders'));
+        //         }
+        //     } catch (\Exception $e) {
+        //         session()->setFlashdata('error', '撤销失败！失误信息：' . $e->getMessage());
+        //         $this->cuslog->insert([
+        //             'controller' => 'orders',
+        //             'method' => 'cancel',
+        //             'empID' => session()->get('empID'),
+        //             'status' => 0,
+        //             'data' => 'ordID = ' . $ordID,
+        //             'response' => $e->getMessage()
+        //         ]);
+        //         return redirect()->to(base_url('/orders'));
+        //     }
+        // }
     }
 
     public function history()
