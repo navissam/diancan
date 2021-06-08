@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\HTTP\Request;
 use App\Models\Customer_model;
 use App\Models\User_model;
 use App\Models\EmpMeta_model;
