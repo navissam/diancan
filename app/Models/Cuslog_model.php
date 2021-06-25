@@ -45,4 +45,53 @@ class Cuslog_model extends Model
         $result = $builder->get()->getFirstRow('array');
         return $result == null ? $result : $result['timestamp'];
     }
+
+    public function getAll()
+    {
+        $db      = \Config\Database::connect();
+        $builder = $db->table($this->table);
+        $builder->select(['cus_log.*', 'customer.name as cus_name']);
+        $builder->join('customer', 'cus_log.empID = customer.empID', 'left');
+        $builder->where('cus_log.timestamp >', date('Y-m-d'));
+        return $builder->get()->getResultArray();
+    }
+
+    public function getController()
+    {
+        $db      = \Config\Database::connect();
+        $builder = $db->table($this->table);
+        $builder->select(['controller']);
+        $builder->groupBy('controller');
+        return $builder->get()->getResultArray();
+    }
+
+    public function getMethod($ctrl)
+    {
+        $db      = \Config\Database::connect();
+        $builder = $db->table($this->table);
+        $builder->select(['method']);
+        $builder->where(['controller' => $ctrl]);
+        $builder->groupBy('method');
+        return $builder->get()->getResultArray();
+    }
+
+    public function getByFilter($start, $finish, $controller, $method, $status)
+    {
+        $db      = \Config\Database::connect();
+        $builder = $db->table($this->table);
+        $builder->select(['cus_log.*', 'customer.name as cus_name']);
+        $builder->join('customer', 'cus_log.empID = customer.empID', 'left');
+        $builder->where('cus_log.timestamp >=', $start);
+        $builder->where('cus_log.timestamp <=', $finish);
+        if ($controller != 'all') {
+            $builder->where('cus_log.controller', $controller);
+        }
+        if ($method != 'all') {
+            $builder->where('cus_log.method', $method);
+        }
+        if ($status != 'all') {
+            $builder->where('cus_log.status', $status);
+        }
+        return $builder->get()->getResultArray();
+    }
 }

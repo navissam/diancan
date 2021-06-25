@@ -131,6 +131,17 @@ $routes->group('admin', function ($routes) {
 		$routes->get('income_export/(:any)', 'Admin\Report::income_export/$1/$2/$3/$4');
 		$routes->get('delivery_query/(:any)', 'Admin\Report::delivery_query/$1/$2/$3/$4');
 	});
+	$routes->group('admlog', ['filter' => 'RoleFilter:super,admin'], function ($routes) {
+		$routes->get('', 'Admin\Admlog::index');
+		$routes->get('getAll', 'Admin\Admlog::getAll');
+		$routes->get('getByDate/(:any)', 'Admin\Admlog::getByDate/$1/$2/$3/$4/$5');
+		$routes->get('getMethod/(:any)', 'Admin\Admlog::getMethod/$1');
+	});
+	$routes->group('cuslog', ['filter' => 'RoleFilter:super,admin'], function ($routes) {
+		$routes->get('', 'Admin\Cuslog::index');
+		$routes->get('getAll', 'Admin\Cuslog::getAll');
+		$routes->get('getByDate/(:any)', 'Admin\Cuslog::getByDate/$1/$2/$3/$4/$5');
+	});
 });
 // $routes->get('(:any)', 'Home::any', ['filter' => 'CusFilter']);
 

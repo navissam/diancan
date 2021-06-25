@@ -177,6 +177,31 @@
                         </a>
                     </li>
                 <?php endif; ?>
+                <?php if (in_array(session()->get('roleID'), ['super', 'admin'])) : ?>
+                    <li class="nav-item has-treeview <?= isset($active['syslog']) ? 'menu-open' : ''; ?>">
+                        <a href="#" class="nav-link <?= isset($active['syslog']) ? 'active' : ''; ?>">
+                            <i class="fas fa-clipboard nav-icon"></i>
+                            <p>系统日志 Catatan Sistem
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="<?= base_url('/admin/admlog') ?>" class="nav-link <?= isset($active['syslog']['admlog']) ? 'active' : ''; ?>">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>管理员日志 Sistem Admin</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="<?= base_url('/admin/cuslog') ?>" class="nav-link <?= isset($active['syslog']['cuslog']) ? 'active' : ''; ?>">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>消费者日志 Sistem Pelanggan</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                <?php endif; ?>
                 <li class="nav-header"></li>
                 <li class="nav-item">
                     <a href="<?= base_url('/admin/account/changepass') ?>" class="nav-link <?= isset($active['pass']) ? 'active' : ''; ?>">
