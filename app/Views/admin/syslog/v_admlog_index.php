@@ -272,15 +272,6 @@
             }
         };
 
-        $.fn.json_beautify = function() {
-            var obj = JSON.parse($('#detail').val());
-            // console.log(obj);
-            var pretty = JSON.stringify(obj, undefined, 4);
-            this.val(pretty);
-        };
-
-        // Then use it like this on any textarea
-        // $('#myTextArea').json_beautify();
         $("body").on("click", ".btn-detail", function(e) {
             id = $(this).data('admlogid');
             let a = admlog.find(x => x.id == id);
