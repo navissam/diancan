@@ -75,8 +75,19 @@ class Orders extends BaseController
         if ($this->request->getMethod() == 'post') {
             $ordID = $this->request->getPost('ordID');
             try {
-                // if ($time < $myTime->toTimeString()) {
-                if ($time < $myTime) {
+                $result = $this->orderModel->find($ordID);
+                if ($result['paymentSta'] == 1) {
+                    $this->cuslog->insert([
+                        'controller' => 'orders',
+                        'method' => 'cancel',
+                        'empID' => session()->get('empID'),
+                        'status' => 0,
+                        'data' => 'ordID = ' . $ordID,
+                        'response' => 'Trying canceling order after payment'
+                    ]);
+                    return redirect()->to(base_url('/orders'));
+                    // if ($time < $myTime->toTimeString()) {
+                } elseif ($time < $myTime) {
                     $this->cuslog->insert([
                         'controller' => 'orders',
                         'method' => 'cancel',
