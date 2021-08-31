@@ -160,7 +160,7 @@ $now = time();
                                         <div class="row">
                                             <div class="col-5 my-auto">
                                                 <a href="<?= base_url('/img/' . $row['photoURL']) ?>" data-toggle="lightbox" data-title="菜肴编号：<?= $row['foodID']; ?>">
-                                                    <img class="card-img-top rounded-left" src="<?= base_url('/img/' . $row['photoURL']) ?>">
+                                                    <img class="card-img-top rounded-left" style="width: 150px; height: 100px; object-fit: contain;" src="<?= base_url('/img/' . $row['photoURL']) ?>">
                                                 </a>
                                             </div>
                                             <div class="col-7">

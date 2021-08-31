@@ -44,7 +44,7 @@ class Orders_model extends Model
         return $builder->get()->getResultArray();
     }
 
-    public function getPrevOrders($cusID = null, $json)
+    public function getPrevOrders($cusID = null, $json = null)
     {
         // ---------find same order detail, only identic
         $db      = \Config\Database::connect();

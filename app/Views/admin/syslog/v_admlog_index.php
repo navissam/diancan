@@ -244,11 +244,11 @@
             controller = $('#controller').val();
             method = $('#method').val();
             status = $('#status').val();
-            f = $('#finish').val();
-            var date = new Date(f);
-            var day = ("0" + (date.getDate() + 1)).slice(-2);
-            var month = ("0" + (date.getMonth() + 1)).slice(-2);
-            var finish = date.getFullYear() + "-" + (month) + "-" + (day);
+            finish = $('#finish').val();
+            // var date = new Date(f);
+            // var day = ("0" + (date.getDate() + 1)).slice(-2);
+            // var month = ("0" + (date.getMonth() + 1)).slice(-2);
+            // var finish = date.getFullYear() + "-" + (month) + "-" + (day);
 
             let url = '/admin/admlog/getByFilter/' + start + "/" + finish + "/" + controller + "/" + method + "/" + status;
             $.get(url, function(data, status) {

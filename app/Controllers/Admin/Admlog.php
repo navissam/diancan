@@ -25,8 +25,11 @@ class Admlog extends BaseController
         return json_encode($this->admlog_model->getAll());
     }
 
-    public function getByFilter($start, $finish, $controller, $method, $status)
+    public function getByFilter($start, $f, $controller, $method, $status)
     {
+        $date = date_create($f);
+        date_modify($date, "+1 days");
+        $finish = date_format($date, "Y-m-d");
         return json_encode($this->admlog_model->getByFilter($start, $finish, $controller, $method, $status));
     }
 
