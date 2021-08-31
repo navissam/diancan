@@ -52,6 +52,7 @@ class Admlog_model extends Model
         $builder = $db->table($this->table);
         $builder->select(['adm_log.*', 'user.name as user_name']);
         $builder->join('user', 'adm_log.userID = user.userID', 'left');
+        $builder->where('user.roleID <>', 'super');
         $builder->where('adm_log.timestamp >', date('Y-m-d'));
         return $builder->get()->getResultArray();
     }
@@ -81,6 +82,7 @@ class Admlog_model extends Model
         $builder = $db->table($this->table);
         $builder->select(['adm_log.*', 'user.name as user_name']);
         $builder->join('user', 'adm_log.userID = user.userID', 'left');
+        $builder->where('user.roleID <>', 'super');
         $builder->where('adm_log.timestamp >=', $start);
         $builder->where('adm_log.timestamp <=', $finish);
         if ($controller != 'all') {
