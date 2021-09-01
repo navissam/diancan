@@ -30,7 +30,7 @@ $now = time();
                                 <div class="col-7">
                                     <select name="deliverySta" class="form-control" id="deliverySta" data-cost="<?= $deliveryCost; ?>">
                                         <option value="0">不外送 Tidak Antar</option>
-                                        <option value="1">外送 Antar</option>
+                                        <!-- <option value="1">外送 Antar</option> -->
                                     </select>
                                 </div>
                                 <div class="col-5">

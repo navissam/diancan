@@ -77,7 +77,7 @@
                         </a>
                     </li>
                 <?php endif; ?>
-                <?php if (in_array(session()->get('roleID'), ['super', 'admin'])) : ?>
+                <?php if (in_array(session()->get('roleID'), ['super', 'admin', 'chef'])) : ?>
                     <li class="nav-item has-treeview <?= isset($active['orders']) ? 'menu-open' : ''; ?>">
                         <a href="#" class="nav-link <?= isset($active['orders']) ? 'active' : ''; ?>">
                             <i class="fas fa-file-invoice nav-icon"></i>
