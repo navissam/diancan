@@ -23,6 +23,10 @@
             <div class="col">
                 <table class="table table-sm" style="font-size: 32px;">
                     <tr>
+                        <td>序号 Serial</td>
+                        <td><?= $order['serialNum']; ?></td>
+                    </tr>
+                    <tr>
                         <td>消费者 Pelanggan</td>
                         <td><?= $order['name']; ?> (<?= $order['empID']; ?>)</td>
                     </tr>

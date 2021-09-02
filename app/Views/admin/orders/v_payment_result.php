@@ -172,12 +172,11 @@
                                                     <button type="submit" class="btn btn-success" onclick="return confirm('确定要支付？ Yakin untuk dilakukan pembayaran?');">
                                                         <i class="fa fa-money" aria-hidden="true"></i>
                                                         支付 Bayar</button>
-                                                <?php else : ?>
-                                                    <a href="<?= base_url('/admin/payment/print/') . '/' . base64_encode($order['ordID']); ?>" class="btn btn-primary">
-                                                        <i class="fas fa-print    "></i>
-                                                        打印 Print
-                                                    </a>
                                                 <?php endif; ?>
+                                                <a href="<?= base_url('/admin/payment/print/') . '/' . base64_encode($order['ordID']); ?>" class="btn btn-primary">
+                                                    <i class="fas fa-print"></i>
+                                                    打印 Print
+                                                </a>
                                             </form>
                                         </div>
                                     </div>
