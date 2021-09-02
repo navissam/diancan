@@ -9,7 +9,8 @@
                 <h2 class="page-header">
                     <img src="<?= base_url(); ?>/img/logo.png" alt="点餐系统" class="brand-image elevation-3 img-circle mb-2" width="50">
                     <span class="brand-text h1 font-weight-bold">点餐系统 - 订单</span>
-                    <span class="h1 font-weight-bold float-right">编号：<?= $order['ordID']; ?></span>
+                    <span class="font-weight-bold float-right" style="font-size: 80px"><?= $order['serialNum']; ?></span>
+                    <span class="float-right mt-4" style="font-size: 50px">序号 Serial：</span>
                     <button class="btn btn-primary d-print-none float-right" onclick="window.print()">
                         <i class="fas fa-print"></i>
                         打印
@@ -22,10 +23,6 @@
         <div class="row mb-3">
             <div class="col">
                 <table class="table table-sm" style="font-size: 32px;">
-                    <tr>
-                        <td>序号 Serial</td>
-                        <td><?= $order['serialNum']; ?></td>
-                    </tr>
                     <tr>
                         <td>消费者 Pelanggan</td>
                         <td><?= $order['name']; ?> (<?= $order['empID']; ?>)</td>
@@ -55,7 +52,7 @@
                 <table class="table table-sm table-detail" style="font-size: 32px;">
                     <thead>
                         <tr>
-                            <td class="font-weight-bold">#</td>
+                            <td class="font-weight-bold">编号</td>
                             <td class="font-weight-bold">菜肴</td>
                             <td align="center">
                                 <span class="font-weight-bold">份数 x 单价</span>
@@ -70,7 +67,7 @@
                         <?php $num = 0;
                         foreach ($details as $row) : ?>
                             <tr>
-                                <td><?= ++$num; ?></td>
+                                <td><?= $row['foodID']; ?></td>
                                 <td><?= $row['foodName']; ?></td>
                                 <td align="center"><?= $row['qty'] . ' x ' . number_format($row['price']); ?></td>
                                 <td align="center">=</td>
