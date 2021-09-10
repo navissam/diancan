@@ -138,7 +138,7 @@ $now = time();
                     </div>
                 </div>
 
-                <!-- <div class="card" style="position: relative; left: 0px; top: 0px;">
+                <div class="card" style="position: relative; left: 0px; top: 0px;">
                     <div class="card-header ui-sortable-handle" style="cursor: move;">
                         <ul class="nav nav-pills">
                             <li class="nav-item">
@@ -149,7 +149,7 @@ $now = time();
                             </li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
 
                 <div class="tab-content">
                     <div class="tab-pane active" id="ordinary">
@@ -198,7 +198,8 @@ $now = time();
                             <?php endforeach; ?>
                         </div>
                     </div>
-                    <div class="tab-pane" id="special" style="position: relative; height: 300px;">
+                    <!-- <div class="tab-pane" id="special" style="position: relative; height: 300px;"> -->
+                    <div class="tab-pane" id="special">
                         <div class="row">
                             <?php foreach ($special as $row) : ?>
                                 <div class="col-md-6 col-sm-6 col-lg-4">

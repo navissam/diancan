@@ -4,6 +4,15 @@
 diancan-1.2.sql
 .env
 
+public/img/*
+!public/img/food_default.png
+!public/img/favicon.jpg
+!public/img/favicon-32x32.png
+!public/img/logo.png
+!public/img/maintain.jpg
+!public/img/view.jpg
+!public/img/view-24.jpg
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json

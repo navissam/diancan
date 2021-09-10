@@ -143,17 +143,16 @@ class Food extends BaseController
             return redirect()->to(base_url('/admin/food/add'))->withInput();
         }
 
-        $file = $this->request->getFile('photoURL');
-
-        if ($file->getError() == 4) {
-            $filename = 'food_default.png';
-        } else {
-            $filename = $file->getRandomName();
-            $file->move(FCPATH . 'img', $filename);
-        }
-
         if ($this->request->getMethod() == 'post') {
             try {
+                $file = $this->request->getFile('photoURL');
+
+                if ($file->getError() == 4) {
+                    $filename = 'food_default.png';
+                } else {
+                    $filename = $this->request->getPost('foodID') . '.' . $file->getClientExtension();;
+                    $file->move(FCPATH . 'img', $filename);
+                }
                 $data = [
                     'foodID' => $this->request->getPost('foodID'),
                     'name' => $this->request->getPost('name'),
@@ -238,17 +237,16 @@ class Food extends BaseController
             return redirect()->to(base_url('/admin/food/add_s'))->withInput();
         }
 
-        $file = $this->request->getFile('photoURL');
-
-        if ($file->getError() == 4) {
-            $filename = 'food_default.png';
-        } else {
-            $filename = $file->getRandomName();
-            $file->move(FCPATH . 'img', $filename);
-        }
-
         if ($this->request->getMethod() == 'post') {
             try {
+                $file = $this->request->getFile('photoURL');
+
+                if ($file->getError() == 4) {
+                    $filename = 'food_default.png';
+                } else {
+                    $filename = $this->request->getPost('foodID') . '.' . $file->getClientExtension();
+                    $file->move(FCPATH . 'img', $filename);
+                }
                 $data = [
                     'foodID' => $this->request->getPost('foodID'),
                     'name' => $this->request->getPost('name'),
@@ -329,17 +327,15 @@ class Food extends BaseController
             return redirect()->to(base_url('/admin/food/edit/' . $id))->withInput();
         }
 
-        $file = $this->request->getFile('photoURL');
-
-        if ($file->getError() == 4) {
-            $filename = false;
-        } else {
-            $filename = $file->getRandomName();
-            $file->move(FCPATH . 'img', $filename);
-        }
-
         if ($this->request->getMethod() == 'post') {
             try {
+                $file = $this->request->getFile('photoURL');
+
+                if ($file->getError() == 4) {
+                    $filename = false;
+                } else {
+                    $filename = $id . '.' . $file->getClientExtension();
+                }
                 $data = [
                     'name' => $this->request->getPost('name'),
                     'nameIND' => $this->request->getPost('nameIND'),
@@ -352,6 +348,7 @@ class Food extends BaseController
                         $photo = './img/' . $oldPhoto;
                         chmod($photo, 0777);
                         unlink($photo);
+                        $file->move(FCPATH . 'img', $filename);
                     }
                 }
                 if ($this->foodModel->update($id, $data)) {
@@ -431,17 +428,16 @@ class Food extends BaseController
             return redirect()->to(base_url('/admin/food/edit_s/' . $id))->withInput();
         }
 
-        $file = $this->request->getFile('photoURL');
-
-        if ($file->getError() == 4) {
-            $filename = false;
-        } else {
-            $filename = $file->getRandomName();
-            $file->move(FCPATH . 'img', $filename);
-        }
-
         if ($this->request->getMethod() == 'post') {
             try {
+                $file = $this->request->getFile('photoURL');
+
+                if ($file->getError() == 4) {
+                    $filename = false;
+                } else {
+                    $filename = $id . '.' . $file->getClientExtension();
+                }
+
                 $data = [
                     'name' => $this->request->getPost('name'),
                     'nameIND' => $this->request->getPost('nameIND'),
@@ -455,6 +451,7 @@ class Food extends BaseController
                         $photo = './img/' . $oldPhoto;
                         chmod($photo, 0777);
                         unlink($photo);
+                        $file->move(FCPATH . 'img', $filename);
                     }
                 }
                 if ($this->foodModel->update($id, $data)) {
