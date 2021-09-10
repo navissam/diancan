@@ -348,8 +348,8 @@ class Food extends BaseController
                         $photo = './img/' . $oldPhoto;
                         chmod($photo, 0777);
                         unlink($photo);
-                        $file->move(FCPATH . 'img', $filename);
                     }
+                    $file->move(FCPATH . 'img', $filename);
                 }
                 if ($this->foodModel->update($id, $data)) {
                     $this->admlog->insert([
@@ -451,8 +451,8 @@ class Food extends BaseController
                         $photo = './img/' . $oldPhoto;
                         chmod($photo, 0777);
                         unlink($photo);
-                        $file->move(FCPATH . 'img', $filename);
                     }
+                    $file->move(FCPATH . 'img', $filename);
                 }
                 if ($this->foodModel->update($id, $data)) {
                     $this->admlog->insert([

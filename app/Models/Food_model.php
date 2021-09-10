@@ -51,7 +51,8 @@ class Food_model extends Model
             $builder->select(['food.*', 'IFNULL(SUMM.sum_qty,0) as ordered_qty']);
             $builder->join($subQuery, '`SUMM`.`foodID` = `food`.`foodID`', 'left');
             $builder->where([
-                'food.type' => 'special'
+                'food.type' => 'special',
+                'deleted_at' => null
             ]);
         } else {
             $builder->where(
