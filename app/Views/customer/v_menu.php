@@ -138,7 +138,7 @@ $now = time();
                     </div>
                 </div>
 
-                <div class="card" style="position: relative; left: 0px; top: 0px;">
+                <!-- <div class="card" style="position: relative; left: 0px; top: 0px;">
                     <div class="card-header ui-sortable-handle" style="cursor: move;">
                         <ul class="nav nav-pills">
                             <li class="nav-item">
@@ -149,11 +149,60 @@ $now = time();
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="tab-content">
                     <div class="tab-pane active" id="ordinary">
                         <div class="row">
+                            <?php foreach ($special as $row) : ?>
+                                <div class="col-md-6 col-sm-6 col-lg-4">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-5 my-auto">
+                                                <a href="<?= base_url('/img/' . $row['photoURL']) ?>" data-toggle="lightbox" data-title="菜肴编号：<?= $row['foodID']; ?>">
+                                                    <img class="card-img-top rounded-left" src="<?= base_url('/img/' . $row['photoURL']) ?>">
+                                                </a>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row my-n1">
+                                                    <div class="col mt-2 mr-2">
+                                                        <span id="name-<?= $row['foodID']; ?>">
+                                                            <?= $row['name']; ?>
+                                                        </span>
+                                                        <span class="text-success text-sm float-right" id="price-<?= $row['foodID']; ?>" data-price="<?= $row['price']; ?>"><?= number_format($row['price']); ?></span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <span id="nameIND-<?= $row['foodID']; ?>" class="text-sm">
+                                                            <?= $row['nameIND']; ?>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <?php if ($row['ordered_qty'] < $row['qty']) : ?>
+                                                        <div class="col-12 mb-auto">
+                                                            <button class="btn btn-success btn-qty font-weight-bold" data-action="plus" data-foodid="<?= $row['foodID']; ?>">
+                                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                                            </button>
+                                                            <span class="btn btn-primary font-weight-bold btn-qty" data-action="zero" id="qty-<?= $row['foodID']; ?>" data-max-qty="<?= $row['qty'] - $row['ordered_qty']; ?>" data-foodid="<?= $row['foodID']; ?>">0</span>
+                                                            <button class="btn btn-danger btn-qty" data-action="minus" data-foodid="<?= $row['foodID']; ?>">
+                                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <span class="text-sm text-primary">剩 Sisa : <?= $row['qty'] - $row['ordered_qty']; ?></span>
+                                                        </div>
+                                                    <?php else : ?>
+                                                        <span class="text-danger mr-auto">断货 Habis</span>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.card -->
+                                </div>
+                            <?php endforeach; ?>
                             <?php foreach ($ordinary as $row) : ?>
                                 <div class="col-md-6 col-sm-6 col-lg-4">
                                     <div class="card">
