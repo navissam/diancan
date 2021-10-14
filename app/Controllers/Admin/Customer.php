@@ -277,16 +277,34 @@ class Customer extends BaseController
             return redirect()->to(base_url('/admin/customer/'))->withInput();
         }
 
-
-        if ($this->request->getMethod() == 'post') {
-            $this->customerModel->save([
-                'name' => $this->request->getPost('name'),
-                'empID' => $this->request->getPost('empID')
+        try {
+            $cusID = $this->request->getPost('cusID');
+            if ($this->request->getMethod() == 'post') {
+                $this->customerModel->save([
+                    'name' => trim($this->request->getPost('name')),
+                    'empID' => $this->request->getPost('empID')
+                ]);
+                $this->admlog->insert([
+                    'controller' => 'customer',
+                    'method' => 'save',
+                    'userID' => session()->get('userID'),
+                    'ip' => $this->request->getIPAddress(),
+                    'status' => 1,
+                    'data' => 'cusID = ' . $cusID
+                ]);
+                session()->setFlashdata('success', '添加成功 Berhasil ditambah');
+                return redirect()->to(base_url('/admin/customer'));
+            }
+        } catch (\Exception $e) {
+            $this->admlog->insert([
+                'controller' => 'customer',
+                'method' => 'save',
+                'userID' => session()->get('userID'),
+                'ip' => $this->request->getIPAddress(),
+                'status' => 0,
+                'data' => 'cusID = ' . $cusID,
+                'response' => $e->getMessage()
             ]);
-
-            session()->setFlashdata('success', '添加成功 Berhasil ditambah');
-            return redirect()->to(base_url('/admin/customer'));
-        } else {
             // if (is_null($name) || is_null($empID)) {
             session()->setFlashdata('error', '添加失败 Gagal ditambah');
             return redirect()->to(base_url('/admin/customer'));
