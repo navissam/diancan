@@ -5,7 +5,7 @@ namespace App\Filters;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\Filters\FilterInterface;
-use App\Models\Customer_model;
+use App\Models\Customer_model; 
 use App\Models\Cuslog_model;
 
 

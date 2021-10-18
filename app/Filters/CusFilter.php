@@ -48,6 +48,15 @@ class CusFilter implements FilterInterface
         if (session()->get('logged_in')) {
             $model = new Customer_model();
             $data = $model->find(session()->get('cusID'));
+            if ($data['status'] != 0) {
+                session()->destroy();
+                    if (isset($_COOKIE['cusid'])) {
+                    setcookie('cusid', '', time() - 3600, '/');
+                    setcookie('key', '', time() - 3600, '/');
+                }
+                session()->setFlashdata('error', '账号已被拉黑');
+                return redirect()->to('/login');
+            }
             if ($data['roomNum'] == null || $data['phoneNum'] == null || $data['region'] == null) {
                 return redirect()->to('/first');
             }
