@@ -102,6 +102,8 @@ class Menu extends BaseController
     public function ordering()
     {
         // dd($this->request->getPost());
+        $time = $this->varModel->getValue('endTime');
+        $myTime = date('H:i');
         if ($this->request->getMethod() == 'post') {
             try {
                 // dd($this->request->getPost());
@@ -117,6 +119,16 @@ class Menu extends BaseController
                         'data' => $json_,
                         'response' => 'JSON is not valid'
                     ]);
+                    return redirect()->to('/menu');
+                } elseif ($time < $myTime) {
+                    $this->cuslog->insert([
+                        'controller' => 'menu',
+                        'method' => 'ordering',
+                        'empID' => session()->get('empID'),
+                        'status' => 0,
+                        'response' => 'ordering overtime'
+                    ]);
+                    session()->setFlashdata('error', '订单时间已过');
                     return redirect()->to('/menu');
                 }
                 $cusID = session()->get('cusID');
