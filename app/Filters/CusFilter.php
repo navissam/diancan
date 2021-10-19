@@ -50,7 +50,7 @@ class CusFilter implements FilterInterface
             $data = $model->find(session()->get('cusID'));
             if ($data['status'] != 0) {
                 session()->destroy();
-                    if (isset($_COOKIE['cusid'])) {
+                if (isset($_COOKIE['cusid'])) {
                     setcookie('cusid', '', time() - 3600, '/');
                     setcookie('key', '', time() - 3600, '/');
                 }
