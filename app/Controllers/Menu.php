@@ -103,7 +103,7 @@ class Menu extends BaseController
     {
         // dd($this->request->getPost());
         $time = $this->varModel->getValue('endTime');
-        $myTime = date('H:i');
+        $myTime = date('H:i:s');
         if ($this->request->getMethod() == 'post') {
             try {
                 // dd($this->request->getPost());
