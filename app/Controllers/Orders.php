@@ -70,8 +70,7 @@ class Orders extends BaseController
         //     }
         // }
         $time = $this->varModel->getValue('endTime');
-        // $myTime = new Time('now');
-        $myTime = date('H:i');
+        $myTime = date('H:i:s');
         if ($this->request->getMethod() == 'post') {
             $ordID = $this->request->getPost('ordID');
             try {
