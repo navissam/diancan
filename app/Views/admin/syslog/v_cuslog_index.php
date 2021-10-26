@@ -93,7 +93,7 @@
     </section>
     <!-- /.content -->
     <div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="detailModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="detailModalLabel">数据 Data</h5>
@@ -102,7 +102,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <input type="text" class="form-control" id="detail" readonly>
+                    <textarea id="detail" cols=60 rows=10 disabled></textarea>
+                    <!-- <input type="text" class="form-control" id="detail" readonly> -->
                 </div>
                 <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> 取消</button>
@@ -255,11 +256,26 @@
             });
         });
 
+        function pretty() {
+            var ugly = document.getElementById('detail').value;
+            try {
+                var obj = JSON.parse(ugly);
+            } catch (e) {
+
+            }
+
+            if (typeof obj === "object" && obj !== null) {
+                var pretty = JSON.stringify(obj, undefined, 4);
+                document.getElementById('detail').value = pretty;
+            }
+        };
+
         $("body").on("click", ".btn-detail", function(e) {
             id = $(this).data('cuslogid');
             let a = cuslog.find(x => x.id == id);
             let data = a.data;
             $('#detail').val(data);
+            pretty();
             $('#detailModal').modal('show');
         });
 

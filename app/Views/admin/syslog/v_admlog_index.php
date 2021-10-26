@@ -104,7 +104,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <textarea id="detail" cols=63 rows=10 disabled></textarea>
+                    <textarea id="detail" cols=60 rows=10 disabled></textarea>
                 </div>
                 <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> 取消</button>
